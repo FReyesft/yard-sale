@@ -1,0 +1,96 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #acd9b2;
+
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+.product-detail {
+    width: 300px;
+    padding-bottom: 24px;
+    position: absolute;
+    right: 0;
+}
+
+.product-detail-close:hover{
+    cursor: pointer;
+}
+
+.product-detail-close{
+    background-color: var(--white);
+    position: relative;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.product-detail >img:nth-child(2){
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    border-radius: 0 0 20px 20px;
+}
+
+.product-info {
+    margin: 20px 24px 0 24px;
+}
+
+.product-info p:nth-child(1) {
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.product-info p:nth-child(2) {
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--very-light-pink);
+}
+
+.product-info p:nth-child(3) {
+    font-weight: bold;
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--very-light-pink);
+}
+
+.primary-button{
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    font-size: var(--md);
+    font-weight: bold;
+    background-color: var(--hospital-green);
+    cursor: pointer;
+}
+
+.add-to-cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+@media (max-width: 400px) {
+    .product-detail {
+        width: 250px;
+        height: 250px;
+    }
+}
